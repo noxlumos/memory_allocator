@@ -14,7 +14,7 @@ int main() {
     // Test case 2
     std::cout << "Test case 2: reuse a free block without splitting" << std::endl;
     int* ptr2 = static_cast<int*>(_malloc(sizeof(int)));
-    *ptr2 = 42;
+    *ptr2 = 100;
     std::cout << "Value at ptr2: " << *ptr2 << std::endl << std::endl;
     _free(ptr2);
 
